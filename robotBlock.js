@@ -21,7 +21,7 @@ Blockly.Blocks['Avancer_Et_Attendre'] = {
     });
     this.setColour(300);
     this.appendValueInput("DELAY_TIME", 'Number')
-        .appendField("Attendre")
+        .appendField("Avancer et Attendre")
         .setCheck('Number');
     this.setInputsInline(true);
     this.setTooltip('Le robot avance et attends un temps donné en millisecondes avant de passer à l\'instruction suivante');
