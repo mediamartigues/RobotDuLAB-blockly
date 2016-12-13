@@ -26,6 +26,7 @@ Blockly.Blocks['Random'] = {
     this.appendValueInput("B", 'Number')
         .appendField("B")
         .setCheck('Number');
+    this.setOutput(true, null);
     this.setInputsInline(true);
     this.setTooltip('Permet d\'obtenir un nombre aléatoire compris entre 2 valeurs');
   }
