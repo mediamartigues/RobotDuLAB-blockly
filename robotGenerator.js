@@ -62,6 +62,13 @@ Blockly.Arduino ['Attendre'] = function (block)  {
   return  code;
 };
 
+Blockly.Arduino ['Random'] = function (block)  {
+  var A = Blockly.Arduino.valueToCode(block, 'A', Blockly.Arduino.ORDER_ATOMIC);
+  var B = Blockly.Arduino.valueToCode(block, 'B', Blockly.Arduino.ORDER_ATOMIC);
+  var code  ="random("+A+","+B+");\n";
+  return  code;
+};
+
 Blockly.Arduino ['AnimerAnneauLed'] = function (block)  {
   Blockly.Arduino.setups_["setup_robotdulab"] = setup_robotdulab;
   Blockly.Arduino.definitions_["define_robotdulab"] = define_robotdulab;
