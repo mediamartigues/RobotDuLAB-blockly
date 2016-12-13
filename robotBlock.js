@@ -12,6 +12,25 @@ Blockly.Blocks['Avancer'] = {
    }
 };
 
+Blockly.Blocks['Random'] = {
+  helpUrl: 'http://wiki.labaixbidouille.com/index.php/RoboduLAB',
+  init: function() {
+    this.jsonInit({
+      "previousStatement": null,
+      "nextStatement": null
+    });
+    this.setColour(300);
+    this.appendValueInput("A", 'Number')
+        .appendField("A")
+        .setCheck('Number');
+    this.appendValueInput("B", 'Number')
+        .appendField("B")
+        .setCheck('Number');
+    this.setInputsInline(true);
+    this.setTooltip('Permet d\'obtenir un nombre aléatoire compris entre 2 valeurs');
+  }
+};
+
 Blockly.Blocks['Avancer_Et_Attendre'] = {
   helpUrl: 'http://wiki.labaixbidouille.com/index.php/RoboduLAB',
   init: function() {
@@ -158,13 +177,6 @@ Blockly.Blocks['Animation'] = {
     this.setColour(0);
 
   }
-};
-
-Blockly.JavaScript['Random'] = function(block) {
-  this.setTooltip('Permet d\'obtenir un nombre aléatoire compris entre 2 valeurs');
-  var value_a = Blockly.JavaScript.valueToCode(block, 'A', Blockly.JavaScript.ORDER_ATOMIC);
-  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
-  this.setOutput(true, 'Random');
 };
 
 Blockly.Blocks['VERT'] = {
