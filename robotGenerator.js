@@ -65,8 +65,8 @@ Blockly.Arduino ['Attendre'] = function (block)  {
 Blockly.Arduino ['Random'] = function (block)  {
   var A = Blockly.Arduino.valueToCode(block, 'A', Blockly.Arduino.ORDER_ATOMIC);
   var B = Blockly.Arduino.valueToCode(block, 'B', Blockly.Arduino.ORDER_ATOMIC);
-  var code  ="random("+A+","+B+");\n";
-  return  code;
+  var code  ="random("+A+","+B+")";
+  return  [ code,  Blockly.Arduino.ORDER_ATOMIC ];
 };
 
 Blockly.Arduino ['AnimerAnneauLed'] = function (block)  {
