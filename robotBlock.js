@@ -160,6 +160,16 @@ Blockly.Blocks['Animation'] = {
   }
 };
 
+Blockly.JavaScript['Random'] = function(block) {
+  this.setTooltip('Permet d\'obtenir un nombre aléatoire compris entre 2 valeurs');
+  var value_a = Blockly.JavaScript.valueToCode(block, 'A', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '...';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
 Blockly.Blocks['VERT'] = {
   helpUrl: 'http://wiki.labaixbidouille.com/index.php/RoboduLAB',
   init: function() {
@@ -306,3 +316,4 @@ Blockly.Blocks['if_sup'] = {
     this.setTooltip('');
   }
 };
+
