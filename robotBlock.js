@@ -15,10 +15,6 @@ Blockly.Blocks['Avancer'] = {
 Blockly.Blocks['Random'] = {
   helpUrl: 'http://wiki.labaixbidouille.com/index.php/RoboduLAB',
   init: function() {
-    this.jsonInit({
-      "previousStatement": null,
-      "nextStatement": null
-    });
     this.setColour(300);
     this.appendValueInput("A", 'Number')
         .appendField("A")
