@@ -24,7 +24,7 @@ Blockly.Arduino ['Avancer'] = function (block)  {
 Blockly.Arduino ['Avancer_Et_Attendre'] = function (block)  {
   var code  ="robotDuLAB.Avancer();\n";
   var time = Blockly.Arduino.valueToCode(block, 'DELAY_TIME', Blockly.Arduino.ORDER_ATOMIC);
-  var code  ="delay("+time+");\n";
+  code  +="delay("+time+");\n";
   return  code;
 };
 
