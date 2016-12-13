@@ -164,10 +164,7 @@ Blockly.JavaScript['Random'] = function(block) {
   this.setTooltip('Permet d\'obtenir un nombre aléatoire compris entre 2 valeurs');
   var value_a = Blockly.JavaScript.valueToCode(block, 'A', Blockly.JavaScript.ORDER_ATOMIC);
   var value_b = Blockly.JavaScript.valueToCode(block, 'B', Blockly.JavaScript.ORDER_ATOMIC);
-  // TODO: Assemble JavaScript into code variable.
-  var code = '...';
-  // TODO: Change ORDER_NONE to the correct strength.
-  return [code, Blockly.JavaScript.ORDER_NONE];
+  this.setOutput(true, 'Random');
 };
 
 Blockly.Blocks['VERT'] = {
